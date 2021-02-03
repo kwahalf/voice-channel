@@ -1,0 +1,3 @@
+voice-env
+.env
+*__pycache__/

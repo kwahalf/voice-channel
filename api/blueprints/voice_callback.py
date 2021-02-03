@@ -34,7 +34,7 @@ class Voice(MethodView):
     def post(self):
         logger.info(
             "received notification %s",
-                flask.request.data
+                flask.request.values
         )
 
         raw_data = flask.request.data

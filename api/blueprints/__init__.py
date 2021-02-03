@@ -13,3 +13,12 @@ VOICE_CALLBACK__REJECT_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
 	<Reject/>
 </response>
 """
+
+GET_DIGIT_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <GetDigits timeout="30" finishOnKey="#" callbackUrl="https://voice-ivr.herokuapp.com/hooks/get_digit_webhook">
+        <Say>Please enter your account number followed by the hash sign</Say>
+    </GetDigits>
+    <Say>We did not get your account number. Good bye</Say>
+</Response>
+"""

@@ -56,3 +56,16 @@ WRONG_OPTION_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
     <Say>The option you selected does not exist. Good bye</Say>
 </Response>
 """
+
+
+NO_TOKEN_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>There is no token available for the specified account. Good bye</Say>
+</Response>
+"""
+
+NO_ACCOUNT_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>There is no account available matching the specified input. Good bye</Say>
+</Response>
+"""

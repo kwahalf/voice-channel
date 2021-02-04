@@ -29,10 +29,10 @@ GET_DIGIT_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
 GET_OPTION_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
 <Response>
     <GetDigits timeout="15" finishOnKey="#" callbackUrl="https://voice-ivr.herokuapp.com/hooks/get_digit_webhook/option/{account}">
-        <Say>To check your loan balance press 1 followed by hash sign  to check your most recent token press 2 followed by hash sign</Say>
+        <Say>To check your loan balance press 1 followed by hash sign.  To check your most recent token press 2 followed by hash sign</Say>
     </GetDigits>
     <GetDigits timeout="15" finishOnKey="#" callbackUrl="https://voice-ivr.herokuapp.com/hooks/get_digit_webhook/option/{account}">
-        <Say> To check your loan balance press 1 followed by hash sign  to check your most recent token press 2 followed by hash sign</Say>
+        <Say> To check your loan balance press 1 followed by hash sign.  To check your most recent token press 2 followed by hash sign</Say>
     </GetDigits>
     <Say>We did not get your option. Good bye</Say>
 </Response>

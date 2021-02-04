@@ -126,7 +126,7 @@ class GetDigit(WebhookBase):
                 xml = self.make_get_balance_payload(300)
                 return self.emit_xml_response(xml)
             if digits == "2":
-                xml = self.make_get_token_payload("*. 1. 2. 4. 6. 9. 0. 7. 9. #.")
+                xml = self.make_get_token_payload("*. 1 . 2 . 4 . 6 . 9 . 0 . 7 . 9 . #.")
                 return self.emit_xml_response(xml)
             xml = self.make_get_wrong_option_payload()
             return self.emit_xml_response(xml)

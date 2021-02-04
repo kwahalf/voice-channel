@@ -48,12 +48,12 @@ class WebhookBase(MethodView):
 
     def make_get_balance_payload(self, balance):
         return make_template_file(
-            GET_BALANCE_TEMPLATE.format(account=balance)
+            GET_BALANCE_TEMPLATE.format(balance=balance)
         )
 
     def make_get_token_payload(self, token):
         return make_template_file(
-            GET_TOKEN_TEMPLATE.format(account=token)
+            GET_TOKEN_TEMPLATE.format(token=token)
         )
 
     def make_get_wrong_option_payload(self):

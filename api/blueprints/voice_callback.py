@@ -173,9 +173,16 @@ class Voice(WebhookBase):
 
         status = flask.request.form.get("callSessionState", None)
 
+        phone_number = flask.request.form.get("callerNumber", "")
+
+
+        if not phone_number.startswith("+254"):
+            xml = self.make_reject_payload()
+            return self.emit_xml_response(xml)
+
         if status == "Completed":
             xml = self.make_reject_payload()
-            self.emit_xml_response(xml)
+            return self.emit_xml_response(xml)
 
 
         xml = self.make_get_digit_payload()
